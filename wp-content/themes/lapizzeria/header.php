@@ -21,6 +21,31 @@
                 </a>
             </div> <!--cierre logo-->
 
+        <div class="informacion-encabezado">
+            <div class="redes-sociales">
+                <?php $args = array(
+                        'theme_location' => 'social-menu',
+                        'container' => 'nav',
+                        'container_class' => 'menu-social',
+                        'container_id' => 'menu-social',
+                        'link_before' => '<span class="sr-text">',
+                        'link_after' => '</span>'
+
+                ); 
+                
+                wp_nav_menu( $args );
+                ?>
+
+            
+            </div>
+
+            <div class = "direccion">
+            Esta es la direccion de la empresa
+            </div>
+        </div>
+
+
+
         </div>  <!--cierre contenedor-->
 
     </header>
